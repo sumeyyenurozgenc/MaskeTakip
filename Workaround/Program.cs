@@ -21,9 +21,9 @@ internal class Program
         string ogrenci2 = "Berkay";
         string ogrenci3 = "Ali";
 
-        //Console.WriteLine(ogrenci1);
-        //Console.WriteLine(ogrenci2);
-        //Console.WriteLine(ogrenci3);
+        Console.WriteLine(ogrenci1);
+        Console.WriteLine(ogrenci2);
+        Console.WriteLine(ogrenci3);
 
         string[] ogrenciler = new string[3];
         ogrenciler[0] = "Engin";
@@ -76,9 +76,9 @@ internal class Program
         PttManager pttManager = new PttManager(new PersonManager());
         pttManager.GiveMask(person1);
 
-
         Console.ReadLine();
     }
+
     static void SelamVer(string isim = "isimsiz")
     {
         Console.WriteLine("Merhaba " + isim);
@@ -90,7 +90,6 @@ internal class Program
         Console.WriteLine("Toplam : " + sonuc);
         return sonuc;
     }
-
     static void Variables()
     {
         string mesaj = "Merhaba";
@@ -98,12 +97,10 @@ internal class Program
         int sayi = 100;
         bool girisYapmisMi = false;
 
-
         string ad = "Sümeyye Nur";
         string soyad = "Özgenç";
         int dogumYili = 1997;
-        long tc = 4548765213;
-
+        long tc = 123;
 
         Console.WriteLine(tutar * 1.18);
     }
@@ -114,11 +111,5 @@ internal class Program
         public string Soyad { get; set; }
         public int DogumYili { get; set; }
         public long TcNo { get; set; }
-
-
-        //public string ad = "Sümeyye Nur";
-        //public string soyad = "Özgenç";
-        //public int dogumYili = 1997;
-        //public long tc = 4548765213;
     }
 }
